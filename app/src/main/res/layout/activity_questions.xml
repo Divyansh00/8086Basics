@@ -61,8 +61,7 @@
                 <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" What is an Instruction?" />
                 <TextView android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/viva_text_view_17" />
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
-                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="What is a Microprocessor?" />
-                <TextView android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/viva_text_view_18" />
+
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
                 <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="What is Microcontroller and Microcomputer?" />
                 <TextView android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/viva_text_view_19" />
@@ -127,8 +126,7 @@
                 <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="What does memory-mapping mean?" />
                 <TextView android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/viva_text_view_39" />
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
-                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="What is DMA?" />
-                <TextView android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/viva_text_view_40" />
+
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
                 <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="What is DMA?" />
                 <TextView android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/viva_text_view_41" />
