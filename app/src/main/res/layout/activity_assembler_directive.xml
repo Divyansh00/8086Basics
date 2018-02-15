@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorials.a8086basics.AssemblerDirective">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8086 ASSEMBLER DIRECTIVES" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/assemblier_directive_defination" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The assembler directives are classified into the following categories based on the functions performed by them. They are" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="a)Data definition and storage allocation directives
+b)Program organization directives
+c)Alignment Directives
+d)Program end Directive
+e)Value returning attribute directives
+f)Procedure definition directives
+g)Macro definition directives
+h)Data control directives
+i)Header file inclusion directives" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="a)Data definition and storage allocation directives" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Data definition directives are used to define the program variables and allocate a specified amount of memory to them. They are of type BYTE, WORD, Double Word, Quad Word and Ten Byte and their size in bytes are 1,2,4,8 and 10 respectively. The data definition directives are DB, DW, DD, DQ, DT." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DB – [define byte]" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The DB directive is used to define a byte–type variable or to set aside one or more storage locations of type byte in memory. It can be used to define single or multiple byte variables." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Example" />
+                <TextView android:textStyle="bold" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" n DB 42H" />
+                <TextView android:paddingLeft="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="tells the assembler to reserve 1 byte of memory for a variable named n and to put the value 42H in the that memory location, when the program is loaded into memory to be run." />
+                <TextView android:textStyle="bold" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" num DB ?" />
+                <TextView android:paddingLeft="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The above statement informs the assembler to reserve one byte of memory for a variable named num. use of ? in data definition informs the assembler that the value is unknown and hence the variable num is not initialized." />
+                <TextView android:textStyle="bold" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" num DB 95,10,48,7,4" />
+                <TextView android:paddingLeft="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The above statement reserves 5 bytes of consecutive memory locations for the variable num and initializes them with 5 values." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DW – [define word]" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The DW directive is used to declare a variable of type word, or to reserve storage locations of type word in memory." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DD – [define double word]" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" The DD directive is used to declare a variable of type double word." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DQ – Define Quad word :" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The directive DQ is used to define a quad word ( 8 bytes) type variable" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DT – Define Ten bytes :" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The directive DT is used to define a Ten bytes type variable." />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="b)Program organization directives" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SEGMENT :" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The segment directive is used to indicate the start of a logical segment. Preceding the segment directive the name you want to give the segment." />
+                <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CODE SEGMENT
+ -------
+-------
+-------
+CODE ENDS" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Indicates to the assembler the start of a logical segment called code. The SEGMENT and ENDS directives are used to identify a group of data items or a group of instructions that you want to be put together in a particular segment. A group of data statements or a group of instruction statements contained between segment and ends directives is called a logical segment. When you setup a logical segment, you give it a name of your choosing." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ENDS :- " />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="This directive is used with the name of a segment to indicate the end of the logical segment. ENDS is used with the segment directive to ‘bracket’ a logical segment containing instructions or data." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ASSUME :-" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The assume directive is used to tell the assembler the name of the logical segment it should use for a specified segment. The 8086 program may have several logical segments. At any time the 8086 works directly with only four physical segments; a code segment, a data segment, a stack segment and an extra segment." />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The statement" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ASSUME CS : Code" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="tells the assembler that the instructions for a program are in a logical segment named code." />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="c)Alignment Directives" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EVEN :" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Align as even memory address. The directive EVEN is used to inform the assembler to increment the location counter to the next even memory address if it is not pointing to even memory location already." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ORG : " />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The directive ORG assigns the location counter with the value specified in the directive. It helps in placing the machine code in the specified location while translating the instructions into machine codes by the assembler.
+ORG 100
+The above statement informs the assembler to initialize the location counter to 100." />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="d)Program end Directive" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="END – END PROGRAM" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The END directive is put after the last statement of a program to tell the assembler that this is the end of the program module. A carriage return is required after the END directive. The last statement of every program must be an end directive." />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="e)Value returning attribute directives" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LENGTH:" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The directive length informs the assembler about the number of elements in a data item such as an array. If an array is defined with DB then it returns the number of bytes allocated to the variable. If an array is defined with DW then it returns the number of words allocated to the array variable." />
+                <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AX, LENGTH ITEMS
+
+data segment
+items db 08h,78h,56h,78h,98h
+data ends" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="In the above example the number of elements assigned as array are 5. So five is the length of items which will be stored in AX." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SIZE:" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The directive SIZE is same as LENGTH except that it returns the number of bytes allocated to the data item instead of the number of elements in it." />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AX,SIZE ITEMS
+data segment
+items DB 08h,78h,56h,78h,98h
+data ends" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="In the above example the number of bytes occupied by the array items are 5. So 5 is the size of items which will be stored in AX." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OFFSET :" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The directive OFFSET informs the assembler to determine the displacement of the specified variable with respect to the base of data segment." />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="f)Procedure definition directives" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PROC:" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The PROC directive is used to identify the start of a procedure. The PROC directive follows a name you give the procedure. After the PROC directive the term NEAR or FAR is used to specify the type of the procedure." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ENDP :-  " />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="This directive is used along with the name of the procedure to indicate the end of a procedure to the assembler." />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="g)Macro definition directives" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MACRO:" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="A macro is a group of instructions we bracket and give a name to at the start of our program. Each time we call the macro in our program, the assembler insert the defined group of instructions in place of the call.
+
+The MACRO directive is used to identify the start of a macro. The Macro directive follows a name you give the macro." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ENDM" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="This directive is used along with the name of the macro to indicate the end of a macro to the assembler." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EQU " />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EQU is used to give a name to some value or symbol. Each time the assembler finds the given name in the program it will replace the name with the value or symbol equated with that name." />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="h)Data control directives" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LABEL:" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The label directive is used to give a name to the current value in the location counter. The label directive must be followed by a term which specifies the type you want associated with that name." />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="i)Header file inclusion directives" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INCLUDE:  " />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The header file inclusion directive is used to define an include file header. The header file inclusion directive is INCLUDE." />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

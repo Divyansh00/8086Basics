@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorials.a8086basics.AddressingModes">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8086 Addressing modes" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addressing_text_view_1" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. Register Addressing Modes" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2. Immediate Addressing Modes" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3. Memory Addressing Modes" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4. Direct Addressing Modes" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5. Relative addressing modes " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6. Implied or Implicit addressing mode" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. Register Addressing Modes" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addressing_text_view_2" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:paddingLeft="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addressing_text_view_3" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Example:" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOV DL, AL;" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copies the value from AL into DL" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOV SI, DX;" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copies the value from DX into SI" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOV SP, BP;" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copies the value from BP into SP" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOV CH, CL" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copies the value from CL into CH" />
+                </LinearLayout>
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2. Immediate Addressing Modes" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addressing_text_view_4" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Example: " />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOV  CX,  437BH;" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addressing_text_view_5" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOV CL, 48H;" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addressing_text_view_6" />
+                </LinearLayout>
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3. Memory Addressing Mode: " />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addressing_text_view_7" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOV  AL,  [BX];" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addressing_text_view_8" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOV AL, [BP];" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addressing_text_view_9" />
+                </LinearLayout>
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addressing_text_view_10" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4. Direct Addressing modes " />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addressing_text_view_11" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5. Relative addressing modes " />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addressing_text_view_12" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6. Implicit or Implied addressing modes " />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/addressing_text_view_13" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

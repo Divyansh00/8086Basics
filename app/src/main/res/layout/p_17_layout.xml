@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"    android:layout_width="match_parent"    android:layout_height="match_parent"    tools:context="com.tutorials.a8086basics.P17Activity">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Divide 16-bit Unsigned Number by an 8-bit Unsigned Number" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AIM :" />
+                <TextView android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="        To write an ALP program to divide a 16-bit unsigned number by a 8-bit unsigned number " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PROGRAM" />
+                <TextView android:textColor="#089b11" android:background="#ffffff" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DATA SEGMENT\n
+DATA ENDS\n
+ASSUME CS:CODE,DS:DATA\n
+CODE SEGMENT\n
+START:MOV AX,0008H\n
+             MOV BL,03H\n
+             DIV BL\n
+             CODE ENDS\n
+             END START" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INPUT" />
+                <TextView android:background="#ffffff" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" AX = 0008H \n
+ BL=02H" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OUTPUT" />
+                <TextView android:background="#ffffff" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" AL = 04H (Quotient) \n
+ AH = 00H (Remainder)  " />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

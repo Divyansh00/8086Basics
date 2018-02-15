@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"    android:layout_width="match_parent"    android:layout_height="match_parent"    tools:context="com.tutorials.a8086basics.Tutorial">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LARGEST NUMBER" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AIM :" />
+                <TextView android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="        To write an ALP program on largest number in a array " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PROGRAM" />
+                <TextView android:textColor="#089b11" android:background="#ffffff" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DATA SEGMENT\n
+DATA ENDS \n
+ASSUME CS:CODE,DS:DATA \n
+CODE SEGMENT0\n
+START:MOV AX,0710H\n
+             MOV DS,AX\n
+             MOV AX,0000\n
+             MOV SI,1500\n
+             MOV CX,0005\n
+             MOV AL,[SI]\n
+             INC SI\n
+  BACK:MOV BL,[SI]\n
+             CMP AL,BL\n
+             JC AHEAD\n
+             JMP INCRE\n
+             NOP\n
+AHEAD:MOV AL,[SI]\n
+INCRE:INC SI\n
+             LOOP BACK\n
+             MOV [DI],AX\n
+             CODE ENDS\n
+             END START" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INPUT" />
+                <TextView android:background="#ffffff" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="
+1710:1500:-1\n
+1710:1501:-2\n
+1710:1502:-3\n
+1710:1503:-4\n
+1710:1504:-5\n
+1710:1505:-6\n
+1710:1506:-7\n
+" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OUTPUT" />
+                <TextView android:background="#ffffff" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" AX = 0007H" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

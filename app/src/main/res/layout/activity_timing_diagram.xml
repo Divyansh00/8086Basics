@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorials.a8086basics.TimingDiagram">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8086 TIMING DIAGRAM" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GENERAL BUS CYCLE" />
+                <ImageView android:layout_width="match_parent" android:layout_height="600px" android:src="@drawable/general_bus_operation" />
+                <Button android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WRITE CYCLE TIMING DIAGRAM FOR MINIMUM MODE" />
+                <ImageView android:layout_width="match_parent" android:layout_height="600px" android:src="@drawable/min_write_cycle" />
+                <Button android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BUS REQUEST AND BUS GRANT IN MINIMUM MODE" />
+                <ImageView android:layout_width="match_parent" android:layout_height="600px" android:src="@drawable/min_request_grant" />
+                <Button android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MEMORY READ TIMING IN MAXIMUM MODE" />
+                <ImageView android:layout_width="match_parent" android:layout_height="600px" android:src="@drawable/max_memeory_read" />
+                <Button android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MEMORY WRITE TIMING IN MAXIMUM MODE" />
+                <ImageView android:layout_width="match_parent" android:layout_height="600px" android:src="@drawable/max_memory_write" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

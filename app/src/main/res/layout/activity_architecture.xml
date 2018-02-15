@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorials.a8086basics.Architecture">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8086 ARCHITECTURE" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="750px"
+                    android:src="@drawable/architecture" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_2" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The Bus Interface Unit" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_3" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Instruction Queue" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_4" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Segment Registers" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_5" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. Code Segment (CS):" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_6" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2. Data Segment (DS):" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_7" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3. Stack Segment (SS):" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_8" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4. Extra Segment (ES):" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_9" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" Instruction Pointer (IP)" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_10" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The Execution Unit" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_11" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Flag Register" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_12" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#34bc22" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Conditional Flags" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_13" />
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Carry Flag (CF):" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_14" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Auxiliary Flag (AF):" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_15" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Parity Flag (PF):" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_16" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Zero Flag (ZF):" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_17" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sign Flag (SF):" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_18" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Overflow Flag (OF):" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_19" />
+                    </LinearLayout>
+                    <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Control Flags" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_20" />
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. Trap Flag (TP):" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_21" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2. Interrupt Flag (IF):" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_22" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <TextView android:textStyle="bold" android:textColor="#e78a27" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3. Direction Flag (DF):" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_23" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="General Purpose Registers" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_24" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. AX Register:" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_25" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2. BX Register:" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_26" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3. CX Register:" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_27" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4. DX Register:" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_28" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Stack Pointer Register" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/architecture_text_view_29" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

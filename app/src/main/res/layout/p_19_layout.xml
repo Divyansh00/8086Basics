@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"    android:layout_width="match_parent"    android:layout_height="match_parent"    tools:context="com.tutorials.a8086basics.P19Activity">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ADD 2 NUMBERS AND MOVE TO MEMORY" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AIM :" />
+                <TextView android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="        To write an ALP program to add 2 numbers and move to memory " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PROGRAM" />
+                <TextView android:textColor="#089b11" android:background="#ffffff" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" program will be uploaded soon" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INPUT" />
+                <TextView android:background="#ffffff" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" AL = 05H" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OUTPUT" />
+                <TextView android:background="#ffffff" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" AL = 06H" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorials.a8086basics.PinDiagram">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PIN DIAGRAM" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/pin_diagram_of_8086" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:text="PIN DIAGRAM OF 8086"
+                    android:textColor="#089c8b"
+                    android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The 8086 can operate in two modes these are the minimum mode and maximum mode .For minimum mode, a unique processor system with a single 8086 and for Maximum mode a multi processor system with more than one 8086." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MN/MX" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MN/MX- is an input pin used to select one of this mode .when MN/MX is high the 8086 operates in minimum mode .In this mode the 8086 is configured to support small single processor system using a few devices that the system bus .when MN/MX is low 8086 is configured to support multiprocessor system." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AD0-AD15" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The AD0-AD15 lines are a 16bit multiplexed addressed or data bus. During the 1st clock cycle AD0-AD15 are the low order 16Bit adders. The 8086 has a total of 20 address line ,the upper 4 lines are multiplexed with the state signal that is A16/S3 , A17/S4 , A18/S5 , A19 /S6.During the first clock period of a best cycle the entire 20bit address is available on these line. During all other clock cycles for memory and i/o operations AD15-AD0 contain the 16 bit data and S3,S4,S5,S6 become the status line .S3 and S4 are decoded as follows" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="There for the 1st clock cycle of an instruction execution the A17/S4 And A16/S3 pins Specify which Segment register generate the segment portions of the 8086 address" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BHE/S7" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BHE/s7 its BUS HIGH ENABLE,BHE/S7 is used as bus high enable during the 1st click cycle of an instruction execution .the BHE can be used in conjunction with AD0 to select the memory" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RD" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RD is low when the data is read from memory or I/O location ." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TEST" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TEST is an input pin and is only used by the wait instruction .the 8086 enter a wait state after execution of the wait instruction until a low is Sean on the test pin." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INTR" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INTR is a maskable interrupt input." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NIM" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NIM is the non maskable interrupt ." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RESET" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RESET is the system set reset input signal it terminates all the activities it clear PSW,IP,DS,SS,ES and the instruction Queue." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DT/R" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DT/R(Data Transmit or receive ):is an o/p signal required in system that uses the data bus transceiver" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ALE" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ALE is an address latch enable . Is an o/p signal provided by the 8086 and can be used to demultiplexed AD0 to AD15 in to A10 toA15 and D0 to D15." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="M/IO" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="M/IO is an 8086 output signal to distinguish a memory access and i/o access." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WR" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WR is used by the 8086 for performing write memory or write i/o operation ." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INTA" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INTA is the interrupt acknowledgment signal" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="HOLD and HLDA" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="a high on the HOLD pin indicates that another master is required to take over the S/M bus" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CLK" />
+                <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CLK clock provides the basic timing signals for the 8086 and bus controls " />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

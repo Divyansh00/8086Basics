@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorials.a8086basics.Programs">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8086 PROGRAMS" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/program1" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INCREMENT OF 8-BIT NUMBER"  />
+                <Button android:id="@+id/program3" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INCREMENT OF 16-BIT NUMBER"  />
+                <Button android:id="@+id/program2" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DECREMENT OF 8-BIT NUMBER"  />
+                <Button android:id="@+id/program4" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DECREMENT OF 16-BIT NUMBER"  />
+                <Button android:id="@+id/program5" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1's COMPLEMENT OF 8-BIT NUMBER"  />
+                <Button android:id="@+id/program6" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1's COMPLEMENT OF 16-BIT NUMBER"  />
+                <Button android:id="@+id/program7" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2's COMPLEMENT OF 8-BIT NUMBER"  />
+                <Button android:id="@+id/program8" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2's COMPLEMENT OF 16-BIT NUMBER"  />
+                <Button android:id="@+id/program9" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ADDITION OF 2 NUMBERS"  />
+                <Button android:id="@+id/program10" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SUBTRACTION OF 2 NUMBERS"  />
+                <Button android:id="@+id/program11" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ADDITION OF 2 16-BIT NUMBERS"  />
+                <Button android:id="@+id/program12" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SUBTRACTION OF 2 16-BIT NUMBERS"  />
+                <Button android:id="@+id/program13" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Multiply Two 8-bit Unsigned NumbersS"  />
+                <Button android:id="@+id/program14" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Multiply Two 16-bit Unsigned Numbers"  />
+                <Button android:id="@+id/program15" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Multiply Two 8-bit Signed Numbers"  />
+                <Button android:id="@+id/program16" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Multiply Two 16-bit Signed Numbers"  />
+                <Button android:id="@+id/program17" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Divide 16-bit Unsigned Number by an 8-bit Unsigned Number"  />
+                <Button android:id="@+id/program18" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Divide 16-bit Signed Number by an 8-bit Signed Number"  />
+                <Button android:id="@+id/program19" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SQUARE OF A NUMBER"  />
+                <Button android:id="@+id/program20" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CUBE OF A  NUMBER"  />
+                <Button android:id="@+id/program21" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AVERAGE OF 3 NUMBERS"  />
+                <Button android:id="@+id/program22" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AVERAGE OF N NUMBERS"  />
+                <Button android:id="@+id/program23" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LARGEST NUMBER"  />
+                <Button android:id="@+id/program24" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SMALLEST NUMBER"  />
+                <Button android:id="@+id/program25" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FIBONACCI SERIES"  />
+                <!--<Button android:id="@+id/program26" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="REVERSE THE WORD IN STRING"  />
+                <Button android:id="@+id/program27" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NO OF 1'S IN A GIVEN BYTE"  />
+                <Button android:id="@+id/program28" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="STRING COMPARISSION"  />
+                <Button android:id="@+id/program29" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DISPLAY WITH DELAY"  />
+                <Button android:id="@+id/program30" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TO GENERATE SQUARE WAVE"  />
+                <Button android:id="@+id/program31" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TO GENERATE SAWTOOTH WAVE"  />
+                <Button android:id="@+id/program32" android:textColor="#089c8b" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TO GENERATE TRIANGULAR WAVE"  />-->
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

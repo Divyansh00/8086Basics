@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"    android:layout_width="match_parent"    android:layout_height="match_parent"    tools:context="com.tutorials.a8086basics.P13Activity">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Multiply Two 8-bit Unsigned NumbersS" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AIM :" />
+                <TextView android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="        To write an ALP program to multiply two 8-bit unsigned numbers " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PROGRAM" />
+                <TextView android:textColor="#089b11" android:background="#ffffff" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DATA SEGMENT\n
+DATA ENDS\n
+ASSUME CS:CODE,DS:DATA\n
+CODE SEGMENT\n
+START:MOV AL,04H\n
+             MOV BL,02H\n
+             MUL BL\n
+             CODE ENDS\n
+             END START" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INPUT" />
+                <TextView android:background="#ffffff" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" AL = 04H
+ BL=02H" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OUTPUT" />
+                <TextView android:background="#ffffff" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" AL = 08H" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorials.a8086basics.InstructionSet">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8086 INSTRUCTION SETS" />
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="the complete set of all the instructions in machine code that can be recognized and executed by a central processing unit." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AAA " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ASCII Adjust after Addition. Corrects result in AH and AL after addition when working with BCD values. " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AX, 15
+AAA
+RET " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AAD " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ASCII Adjust before Division.Prepares two BCD values for division. " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AX, 0105h
+AAD
+RET " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AAM  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ASCII Adjust after Multiplication. Corrects the result of multiplication of two BCD values.  " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AL, 15
+AAM
+RET " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AAS  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ASCII Adjust after Subtraction. Corrects result in AH and AL after subtraction when working with BCD values. " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AX, 02FFh
+AAS
+RET " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADC  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add with Carry. " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="STC
+MOV AL, 5
+ADC AL, 1
+RET " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADD  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add.  " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AL, 5
+ADD AL, -3
+RET " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AND  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Logical AND between all bits of two operands.Result is stored in operand1" />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AL, 'a'
+AND AL, 11011111b
+RET " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CALL " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Transfers control to procedure, return address is (IP) is pushed to stack. 4-byte address may be entered in this form: 1234h:5678h, first value is a segment second value is an offset (this is a far call, so CS is also pushed to stack). " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CBW " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Convert byte into word. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CLC " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Clear Carry flag. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CLD " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Clear Direction flag. SI and DI will be incremented by chain instructions: CMPSB, CMPSW, LODSB, LODSW, MOVSB, MOVSW, STOSB, STOSW. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CLI " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Clear Interrupt enable flag. This disables hardware interrupts. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CMC " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Complement Carry flag. Inverts value of CF. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CMP " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Compare. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CMPSB " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Compare bytes: ES:[DI] from DS:[SI]. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CMPSW " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Compare words: ES:[DI] from DS:[SI]. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CWD " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Convert Word to Double word. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DAA " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Decimal adjust After Addition. Corrects the result of addition of two packed BCD values." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DAS  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Decimal adjust After Subtraction. Corrects the result of subtraction of two packed BCD values. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DEC " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Decrement. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DIV " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Unsigned divide. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HLT " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Halt the System. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IDIV " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Signed divide. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IMUL " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Signed multiply. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IN " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Input from port into AL or AX. Second operand is a port number. If required to access port number over 255 - DX register should be used. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INC  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Increment. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INT " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Interrupt numbered by immediate byte (0..255). " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INTO " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Interrupt 4 if Overflow flag is 1. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IRET " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Algorithm: " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JA " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Above second operand (as set by CMP instruction). Unsigned.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JAE" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Above or Equal to second operand (as set by CMP instruction). Unsigned.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JB " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Below second operand (as set by CMP instruction). Unsigned." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JBE" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Below or Equal to second operand (as set by CMP instruction). Unsigned. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JC " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Carry flag is set to 1. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JCXZ " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if CX register is 0. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JE" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Equal to second operand (as set by CMP instruction).Signed/Unsigned.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JG " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Greater then second operand (as set by CMP instruction). Signed. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JGE  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Greater or Equal to second operand (as set by CMP instruction). Signed. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JL " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Less then second operand (as set by CMP instruction). Signed. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JLE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Less or Equal to second operand (as set by CMP instruction). Signed. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JMP " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Unconditional Jump. Transfers control to another part of the program. 4-byte address may be entered in this form: 1234h:5678h, first value is a segment second value is an offset. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNA " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Not Above second operand (as set by CMP instruction). Unsigned.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNAE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Not Above and Not Equal to second operand (as set by CMP instruction). Unsigned. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNB " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Not Below second operand (as set by CMP instruction). Unsigned.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNBE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Not Below and Not Equal to second operand (as set by CMP instruction). Unsigned. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNC " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Carry flag is set to 0. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Not Equal to second operand (as set by CMP instruction). Signed/Unsigned." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNG " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Not Greater then second operand (as set by CMP instruction). Signed. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNGE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Not Greater and Not Equal to second operand (as set by CMP instruction). Signed. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNL " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Not Less then second operand (as set by CMP instruction).Signed." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNLE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if first operand is Not Less and Not Equal to second operand (as set by CMP instruction). Signed. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNO" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Not Overflow. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNP  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if No Parity (odd). Only 8 low bits of result are checked. Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNS " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Not Signed (if positive). Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JNZ " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Not Zero (not equal). Set by CMP,SUB, ADD, TEST, AND, OR, XOR instructions." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JO" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Overflow." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JP " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Parity (even). Only 8 low bits of result are checked. Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JPE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Parity Even. Only 8 low bits of result are checked. Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JPO  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Parity Odd. Only 8 low bits of result are checked. Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JS " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Signed (if negative). Set by CMP,SUB, ADD, TEST, AND, OR, XOR instructions.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JZ " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Short Jump if Zero (equal). Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LAHF " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Load AH from 8 low bits of Flags register. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LDS " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Load memory double word into word register and DS." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LEA " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Load Effective Address. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LES " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Load memory double word into word register and ES. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LODSB " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Load byte at DS:[SI] into AL. Update SI. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LODSW" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Load word at DS:[SI] into AX. Update SI." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOOP " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Decrease CX, jump to label if CX not zero. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOOPE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Decrease CX, jump to label if CX not zero and Equal (ZF = 1).  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOOPNE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Decrease CX, jump to label if CX not zero and Not Equal (ZF = 0)." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOOPNZ " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Decrease CX, jump to label if CX not zero and ZF= 0." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOOPZ " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Decrease CX, jump to label if CX not zero and ZF= 1. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOV " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Copy operand2 to operand1.
+The MOV instruction cannot:
+* set the value of the CS and IP registers.
+* copy value of one segment register toanother segment register (should copy togeneral register first).
+* copy immediate value to segment register(should copy to general register first). " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOVSB " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Copy byte at DS:[SI] to ES:[DI]. Update SI and DI. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOVSW " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Copy word at DS:[SI] to ES:[DI]. Update SI and DI.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MUL " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Unsigned multiply" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NEG " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Negate. Makes operand negative (two's complement).  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NOP " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No Operation. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NOT " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Invert each bit of the operand. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OR " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Logical OR between all bits of two operands.Result is stored in first operand. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OUT " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Output from AL or AX to port.
+First operand is a port number. If required toaccess port number over 255 - DX register should be used. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="POP " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Get 16 bit value from the stack. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="POPA " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pop all general purpose registers DI, SI, BP, SP,BX, DX, CX, AX from the stack.
+SP value is ignored, it is Popped but not set to SP register). " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="POPF " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Get flags register from the stack. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PUSH " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Store 16 bit value in the stack. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PUSHA " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Push all general purpose registers AX, CX, DX,BX, SP, BP, SI, DI in the stack.
+Original value of SP register (before PUSHA) is used. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PUSHF" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Store flags register in the stack.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RCL " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rotate operand1 left through Carry Flag. The number of rotates is set by operand2. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RCR " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rotate operand1 right through Carry Flag. The number of rotates is set by operand2.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REP " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Repeat following MOVSB, MOVSW, LODSB, LODSW, STOSB, STOSW instructions CX times. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REPE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Repeat following CMPSB, CMPSW, SCASB, SCASW instructions while ZF = 1 (result is Equal), maximum CX times. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REPNE " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Repeat following CMPSB, CMPSW, SCASB, SCASW instructions while ZF = 0 (result is Not Equal), maximum CX times. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REPNZ " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Repeat following CMPSB, CMPSW, SCASB, SCASW instructions while ZF = 0 (result is Not Zero), maximum CX times. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REPZ " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Repeat following CMPSB, CMPSW, SCASB, SCASW instructions while ZF = 1 (result is Zero), maximum CX times. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RET " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Return from near procedure. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RETF" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Return from Far procedure. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ROL " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rotate operand1 left. The number of rotates is set by operand2.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ROR" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rotate operand1 right. The number of rotates is set by operand2.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SAHF " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Store AH register into low 8 bits of Flags register.   " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SAL   " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Shift Arithmetic operand1 Left. The number of shifts is set by operand2. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SAR " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Shift Arithmetic operand1 Right. The number of shifts is set by operand2. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SBB  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Subtract with Borrow.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SCASB  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Compare bytes: AL from ES:[DI]. " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SCASW  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Compare words: AX from ES:[DI]" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHL  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Shift operand1 Left. The number of shifts is set by operand2." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHR  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Shift operand1 Right. The number of shifts is set by operand2." />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="STC" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Set Carry flag.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="STD  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Set Direction flag. SI and DI will be decremented by chain instructions: CMPSB, CMPSW, LODSB, LODSW, MOVSB, MOVSW, STOSB, STOSW.  " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="STI " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Set Interrupt enable flag. This enables hardware interrupts" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="STOSB" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Store byte in AL into ES:[DI]. Update DI.  " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ORG 100h
+LEA DI, a1
+MOV AL, 12h
+MOV CX, 5
+REP STOSB
+RET
+" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="STOSW  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Store word in AX into ES:[DI]. Update DI. " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ORG 100h
+LEA DI, a1
+MOV AX, 1234h
+MOV CX, 5
+REP STOSW
+RET
+" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TEST" />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Logical AND between all bits of two operands for flags only. These flags are effected: ZF, SF, PF. Result is not stored anywhere.  " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AL, 00000101b
+TEST AL, 1 ; ZF = 0.
+TEST AL, 10b ; ZF = 1.
+RET
+ " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XCHG " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Exchange values of two operands. " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AL, 5
+MOV AH, 2
+XCHG AL, AH
+XCHG AL, AH
+RET
+" />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XLATB  " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Translate byte from table. Copy value of memory byte at DS:[BX + unsigned AL] to AL register. " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ORG 100h
+LEA BX, dat
+MOV AL, 2
+XLATB
+RET
+ " />
+                <TextView android:textStyle="bold" android:textColor="#089c8b" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XOR " />
+                <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Logical XOR (Exclusive OR) between all bits of two operands. Result is stored in first operand.  " />
+                <TextView android:textStyle="bold" android:textColor="#e78a27" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EXAMPLE" />
+                <TextView android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MOV AL, 00000111b
+XOR AL, 00000010b
+RET
+ " />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="100px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
