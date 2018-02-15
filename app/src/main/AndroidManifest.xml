@@ -51,7 +51,8 @@
         <activity android:name=".P24Activity" />
         <activity android:name=".P25Activity" />
         <activity android:name=".P26Activity" />
-        <activity android:name=".Programs"></activity>
+        <activity android:name=".Programs" />
+        <activity android:name=".Questions"></activity>
     </application>
 
 </manifest>

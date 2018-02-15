@@ -40,4 +40,15 @@
         android:layout_marginTop="15dp"
         android:background="@android:color/holo_green_dark"
         android:text="PROGRAMS" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="VIVA Questions" />
 </RelativeLayout>
