@@ -11,6 +11,7 @@ public class MainActivity extends Activity {
     private Button button2;
     private Button button3;
     private Button button4;
+    private Button button5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +44,13 @@ public class MainActivity extends Activity {
                 openQuestions();
             }
         });
+        button5 = findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openAboutUs();
+            }
+        });
     }
     public void openIntroduction8086(){
         Intent intent = new Intent(this,Introduction8086.class);
@@ -58,6 +66,10 @@ public class MainActivity extends Activity {
     }
     public void openQuestions(){
         Intent intent = new Intent(this,Questions.class);
+        startActivity(intent);
+    }
+    public void openAboutUs(){
+        Intent intent = new Intent(this,AboutUs.class);
         startActivity(intent);
     }
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tutorials.a8086basics.AboutUs">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textStyle="bold" android:textColor="#ffffff" android:background="#089c8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ABOUT US" />
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/ic_launcher_foreground" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="\nDeveloped By:\n
+                Divyansh Chowdhary(16BCE1152)\n
+                Nikhilesh Prabhakar(16BCE1158)\n
+                Ankur Ranjan(16BCE1092)\n
+                Shivam Rathi
+                "/>
+                <TextView android:textStyle="bold" android:textColor="#ff089c8b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="#ffffff" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="
+EMAIL :- divyansh.chowdhary2016@vitstudent.ac.in" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
