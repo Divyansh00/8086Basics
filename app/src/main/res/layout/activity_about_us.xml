@@ -16,10 +16,7 @@
                     android:layout_gravity="center_horizontal"
                     android:src="@mipmap/ic_launcher_foreground" />
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="\nDeveloped By:\n
-                Divyansh Chowdhary(16BCE1152)\n
-                Nikhilesh Prabhakar(16BCE1158)\n
-                Ankur Ranjan(16BCE1092)\n
-                Shivam Rathi
+                Divyansh Chowdhary(16BCE1152)
                 "/>
                 <TextView android:textStyle="bold" android:textColor="#ff089c8b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="#ffffff" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="
 EMAIL :- divyansh.chowdhary2016@vitstudent.ac.in" />
