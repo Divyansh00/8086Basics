@@ -61,7 +61,7 @@
         android:layout_below="@+id/button4"
         android:layout_marginTop="17dp"
         android:background="@android:color/holo_purple"
-        android:text="CHAT" />
+        android:text="DISCUSSION FORUM" />
 
     <Button
         android:id="@+id/button5"
